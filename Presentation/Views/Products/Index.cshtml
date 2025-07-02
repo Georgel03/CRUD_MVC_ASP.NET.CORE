@@ -1,0 +1,93 @@
+﻿@using CrudMvc.Application.DTO
+@model PaginatedProductDTO
+
+@{
+    ViewData["Title"] = "List of Products";
+}
+
+<h2 class="text-center mb-5">List of Products</h2>
+
+<div class="row mb-4">
+    <div class="col-md-6">
+        <a class="btn btn-primary" asp-controller="Products" asp-action="Create">New Product</a>
+    </div>
+    <div class="col-md-6 text-end">
+        <form method="get" asp-controller="Products" asp-action="Index" class="d-flex">
+            <input type="text" name="search" value="@Model.Query.SearchItem" class="form-control me-2" placeholder="Search..." />
+            <button type="submit" class="btn btn-outline-secondary">Search</button>
+        </form>
+    </div>
+</div>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th><a asp-action="Index" asp-route-sort="Id" asp-route-order="@(Model.Query.SortOrder == "asc" ? "desc" : "asc")" asp-route-search="@Model.Query.SearchItem">Id</a></th>
+            <th><a asp-action="Index" asp-route-sort="Name" asp-route-order="@(Model.Query.SortOrder == "asc" ? "desc" : "asc")" asp-route-search="@Model.Query.SearchItem">Name</a></th>
+            <th><a asp-action="Index" asp-route-sort="Brand" asp-route-order="@(Model.Query.SortOrder == "asc" ? "desc" : "asc")" asp-route-search="@Model.Query.SearchItem">Brand</a></th>
+            <th><a asp-action="Index" asp-route-sort="Category" asp-route-order="@(Model.Query.SortOrder == "asc" ? "desc" : "asc")" asp-route-search="@Model.Query.SearchItem">Category</a></th>
+            <th><a asp-action="Index" asp-route-sort="Price" asp-route-order="@(Model.Query.SortOrder == "asc" ? "desc" : "asc")" asp-route-search="@Model.Query.SearchItem">Price</a></th>
+            <th>Image</th>
+            <th><a asp-action="Index" asp-route-sort="CreatedAt" asp-route-order="@(Model.Query.SortOrder == "asc" ? "desc" : "asc")" asp-route-search="@Model.Query.SearchItem">CreatedAt</a></th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model.Products)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Name</td>
+                <td>@product.Brand</td>
+                <td>@product.Category</td>
+                <td>@product.Price.ToString("N2")</td>
+                <td><img src="@product.ImageUrl" width="100" /></td>
+                <td>@product.CreatedAt.ToString("MM.dd.yyyy")</td>
+                <td>
+                    <a class="btn btn-sm btn-primary mb-1" asp-action="Edit" asp-route-id="@product.Id">Edit</a>
+                    <form method="post" asp-action="Delete" asp-route-id="@product.Id" class="d-inline" onsubmit="return confirm('Are you sure?');">
+                        <button type="submit" class="btn btn-sm btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+@if (Model.TotalPages > 1)
+{
+    <nav aria-label="Pagination">
+        <ul class="pagination justify-content-center">
+            @* Butonul previous *@
+            <li class="page-item @(Model.Query.Page == 1 ? "disabled" : "")">
+                <a class="page-link"
+                   asp-action="Index"
+                   asp-route-page="@(Model.Query.Page - 1)"
+                   asp-route-search="@Model.Query.SearchItem"
+                   asp-route-sort="@Model.Query.SortColumn"
+                   asp-route-order="@Model.Query.SortOrder">Previous</a>
+            </li>
+            @* Numerele de pagini *@
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(Model.Query.Page == i ? "active" : "")">
+                    <a class="page-link"
+                       asp-action="Index"
+                       asp-route-page="@i"
+                       asp-route-search="@Model.Query.SearchItem"
+                       asp-route-sort="@Model.Query.SortColumn"
+                       asp-route-order="@Model.Query.SortOrder">@i</a>
+                </li>
+            }
+            @* Butonul next *@
+            <li class="page-item @(Model.Query.Page == Model.TotalPages ? "disabled" : "")">
+                <a class="page-link"
+                   asp-action="Index"
+                   asp-route-page="@(Model.Query.Page + 1)"
+                   asp-route-search="@Model.Query.SearchItem"
+                   asp-route-sort="@Model.Query.SortColumn"
+                   asp-route-order="@Model.Query.SortOrder">Next</a>
+            </li>
+        </ul>
+    </nav>
+}

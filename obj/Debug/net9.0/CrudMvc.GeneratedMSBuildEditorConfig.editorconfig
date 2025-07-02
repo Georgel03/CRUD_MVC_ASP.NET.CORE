@@ -1,0 +1,73 @@
+is_global = true
+build_property.TargetFramework = net9.0
+build_property.TargetFramework = net9.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = CrudMvc
+build_property.RootNamespace = CrudMvc
+build_property.ProjectDir = D:\C#\Lateral\EF_CORE\WEB\CrudMvc\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 9.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\C#\Lateral\EF_CORE\WEB\CrudMvc
+build_property._RazorSourceGeneratorDebug = 
+build_property.EffectiveAnalysisLevelStyle = 9.0
+build_property.EnableCodeStyleSeverity = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXEhvbWVcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXEhvbWVcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Products/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXFByb2R1Y3RzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Products/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXFByb2R1Y3RzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Products/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXFByb2R1Y3RzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Products/_ProductFormPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXFByb2R1Y3RzXF9Qcm9kdWN0Rm9ybVBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXFNoYXJlZFxFcnJvci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXFNoYXJlZFxfVmFsaWRhdGlvblNjcmlwdHNQYXJ0aWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXF9WaWV3SW1wb3J0cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/C\#/Lateral/EF_CORE/WEB/CrudMvc/Presentation/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UHJlc2VudGF0aW9uXFZpZXdzXFNoYXJlZFxfTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = b-tfx2471q2f
